@@ -19,5 +19,7 @@ public class BlockLootTableProvider extends FabricBlockLootTableProvider {
         oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE);
         oreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY);
         oreDrops(ModBlocks.CRYOLITE_ORE, ModItems.CRYOLITE);
+
+        drops(ModBlocks.STEEL_BLOCK);
     }
 }

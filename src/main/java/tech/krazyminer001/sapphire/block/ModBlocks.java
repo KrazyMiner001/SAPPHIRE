@@ -21,6 +21,9 @@ public class ModBlocks {
     public static final Block CRYOLITE_ORE = register("cryolite_ore",
             new Block(AbstractBlock.Settings.copy(Blocks.ANCIENT_DEBRIS)), true);
 
+    public static final Block STEEL_BLOCK = register("steel_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)), true);
+
     private static Block register(String name, Block block, boolean registerItem) {
         if (registerItem) {
             Registry.register(Registries.ITEM, of(name), new BlockItem(block, new Item.Settings()));
