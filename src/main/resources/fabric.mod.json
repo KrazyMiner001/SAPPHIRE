@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sapphire",
+	"version": "${version}",
+	"name": "SAPPHIRE",
+	"description": "A mod which adds aluminium, extracted by mining rubies",
+	"authors": [
+		"KrazyMiner001"
+	],
+	"contact": {
+		"homepage": "https://krazyminer001.tech/mods",
+		"sources": "https://github.com/KrazyMiner001/SAPPHIRE"
+	},
+	"license": "MIT",
+	"icon": "assets/sapphire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tech.krazyminer001.sapphire.SAPPHIRE"
+		],
+		"client": [
+			"tech.krazyminer001.sapphire.SAPPHIREClient"
+		],
+		"fabric-datagen": [
+			"tech.krazyminer001.sapphire.SAPPHIREDataGenerator"
+		]
+	},
+	"mixins": [
+		"sapphire.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
