@@ -2,7 +2,9 @@
   "block.sapphire.cryolite_ore": "Cryolite Ore",
   "block.sapphire.ruby_ore": "Ruby Ore",
   "block.sapphire.sapphire_ore": "Sapphire Ore",
+  "block.sapphire.steel_block": "Steel Block",
   "item.sapphire.cryolite": "Cryolite",
   "item.sapphire.ruby": "Ruby",
-  "item.sapphire.sapphire": "Sapphire"
+  "item.sapphire.sapphire": "Sapphire",
+  "item.sapphire.steel_ingot": "Steel Ingot"
 }

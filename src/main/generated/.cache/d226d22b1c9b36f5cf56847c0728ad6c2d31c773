@@ -1,4 +1,4 @@
-// 1.21	2024-06-26T15:50:35.1486185	SAPPHIRE/Model Definitions
+// 1.21	2024-06-26T16:36:31.0584466	SAPPHIRE/Model Definitions
 2e830922157db0887d100b9ded3edffe72562d21 assets\sapphire\models\block\ruby_ore.json
 6b5dd7f1f6ed6d16d826f0669b0c9c4b9e6f1ee2 assets\sapphire\models\block\cryolite_ore.json
 e2a0140af5816f03a3d96c0a9efb2e41151a0c8e assets\sapphire\models\item\cryolite.json
@@ -8,6 +8,6 @@ ecfcc6c6aa1ceb4abdf62ff30bca877eb0f37b41 assets\sapphire\blockstates\sapphire_or
 1d01fade37d5e0bd889279eb7900e8ea407ca200 assets\sapphire\models\item\ruby_ore.json
 a42b1a358107ae654bd07198e86aa4f8d0cdd117 assets\sapphire\models\block\sapphire_ore.json
 01c6c679de6c99e52d3bac617a736eb0e50de458 assets\sapphire\models\item\ruby.json
+7eb56dfeae3231c1691b31d84b3723437178b6de assets\sapphire\blockstates\cryolite_ore.json
 d8da4bc09b5ca2b9c4db67da22fc9227ee1aae58 assets\sapphire\models\item\sapphire.json
 2393ceaa508a627f6f48146a46ef81a9442f0302 assets\sapphire\models\item\cryolite_ore.json
-7eb56dfeae3231c1691b31d84b3723437178b6de assets\sapphire\blockstates\cryolite_ore.json

@@ -20,9 +20,12 @@ public class EnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SAPPHIRE_ORE, "Sapphire Ore");
         translationBuilder.add(ModBlocks.CRYOLITE_ORE, "Cryolite Ore");
 
+        translationBuilder.add(ModBlocks.STEEL_BLOCK, "Steel Block");
+
         //Items
         translationBuilder.add(ModItems.RUBY, "Ruby");
         translationBuilder.add(ModItems.SAPPHIRE, "Sapphire");
         translationBuilder.add(ModItems.CRYOLITE, "Cryolite");
+        translationBuilder.add(ModItems.STEEL_INGOT, "Steel Ingot");
     }
 }
