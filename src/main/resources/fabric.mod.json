@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"tech.krazyminer001.sapphire.SAPPHIRE"
+          "tech.krazyminer001.sapphire.Sapphire"
 		],
 		"client": [
-			"tech.krazyminer001.sapphire.SAPPHIREClient"
+			"tech.krazyminer001.sapphire.SapphireClient"
 		],
 		"fabric-datagen": [
-			"tech.krazyminer001.sapphire.SAPPHIREDataGenerator"
+			"tech.krazyminer001.sapphire.SapphireDataGenerator"
 		]
 	},
 	"mixins": [
