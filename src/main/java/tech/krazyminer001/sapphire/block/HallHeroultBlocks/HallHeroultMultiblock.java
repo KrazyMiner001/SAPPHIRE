@@ -13,16 +13,6 @@ public class HallHeroultMultiblock extends LibyMultiBlock {
         super(settings, new BlockPos[]{
                 new BlockPos(0, 0, 0),
                 new BlockPos(1, 0, 0),
-                new BlockPos(2, 0, 0),
-                new BlockPos(3, 0, 0),
-                new BlockPos(4, 0, 0),
-                new BlockPos(5, 0, 0),
-                new BlockPos(6, 0, 0),
-                new BlockPos(7, 0, 0),
-                new BlockPos(8, 0, 0),
-                new BlockPos(9, 0, 0),
-                new BlockPos(10, 0, 0),
-                new BlockPos(11, 0, 0),
         });
     }
 
@@ -33,6 +23,6 @@ public class HallHeroultMultiblock extends LibyMultiBlock {
 
     @Override
     public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+        return new HallHeroultMultiblockEntity(pos, state);
     }
 }
