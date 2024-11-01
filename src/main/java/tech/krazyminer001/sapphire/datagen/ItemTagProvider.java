@@ -6,8 +6,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.Nullable;
-import tech.krazyminer001.sapphire.item.ModItems;
+import tech.krazyminer001.sapphire.item.SapphireItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,6 +18,6 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.ITEM, Identifier.of("c", "steel_ingots")))
-                .add(ModItems.STEEL_INGOT);
+                .add(SapphireItems.STEEL_INGOT);
     }
 }

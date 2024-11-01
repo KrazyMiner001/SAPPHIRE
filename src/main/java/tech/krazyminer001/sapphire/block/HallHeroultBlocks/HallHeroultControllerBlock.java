@@ -1,7 +1,5 @@
-package tech.krazyminer001.sapphire.block.custom;
+package tech.krazyminer001.sapphire.block.HallHeroultBlocks;
 
-import dev.mayaqq.nexusframe.NexusFrame;
-import dev.mayaqq.nexusframe.api.multiblock.Multiblock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

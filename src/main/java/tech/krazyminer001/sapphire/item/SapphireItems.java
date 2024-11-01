@@ -7,7 +7,7 @@ import tech.krazyminer001.sapphire.Sapphire;
 
 import static tech.krazyminer001.sapphire.util.Utility.of;
 
-public class ModItems {
+public class SapphireItems {
     public static final Item SAPPHIRE = register("sapphire", new Item(new Item.Settings()));
     public static final Item RUBY = register("ruby", new Item(new Item.Settings()));
     public static final Item CRYOLITE = register("cryolite", new Item(new Item.Settings()));

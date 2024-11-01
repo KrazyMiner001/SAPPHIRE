@@ -1,4 +1,4 @@
-package tech.krazyminer001.sapphire.block.custom;
+package tech.krazyminer001.sapphire.block.HallHeroultBlocks;
 
 import com.mojang.serialization.MapCodec;
 import nazario.liby.block.LibyMultiBlock;

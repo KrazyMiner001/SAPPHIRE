@@ -8,12 +8,12 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import tech.krazyminer001.sapphire.Sapphire;
-import tech.krazyminer001.sapphire.block.custom.HallHeroultControllerBlock;
-import tech.krazyminer001.sapphire.block.custom.HallHeroultMultiblock;
+import tech.krazyminer001.sapphire.block.HallHeroultBlocks.HallHeroultControllerBlock;
+import tech.krazyminer001.sapphire.block.HallHeroultBlocks.HallHeroultMultiblock;
 
 import static tech.krazyminer001.sapphire.util.Utility.of;
 
-public class ModBlocks {
+public class SapphireBlocks {
     public static final Block SAPPHIRE_ORE = register("sapphire_ore",
             new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE)), true);
 

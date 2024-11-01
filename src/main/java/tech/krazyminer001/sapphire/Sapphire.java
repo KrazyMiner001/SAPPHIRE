@@ -4,8 +4,9 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import tech.krazyminer001.sapphire.block.ModBlocks;
-import tech.krazyminer001.sapphire.item.ModItems;
+import tech.krazyminer001.sapphire.block.SapphireBlocks;
+import tech.krazyminer001.sapphire.block.SapphireBlockEntities;
+import tech.krazyminer001.sapphire.item.SapphireItems;
 
 public class Sapphire implements ModInitializer {
 
@@ -16,7 +17,8 @@ public class Sapphire implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("You can write literally anything in these");
 
-		ModBlocks.registerBlocks();
-		ModItems.registerItems();
+		SapphireBlocks.registerBlocks();
+		SapphireBlockEntities.registerBlockEntities();
+		SapphireItems.registerItems();
 	}
 }
