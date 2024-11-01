@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import tech.krazyminer001.sapphire.block.SapphireBlocks;
 import tech.krazyminer001.sapphire.block.SapphireBlockEntities;
 import tech.krazyminer001.sapphire.item.SapphireItems;
+import tech.krazyminer001.sapphire.screen.SapphireScreenHandlers;
 
 public class Sapphire implements ModInitializer {
 
@@ -18,6 +19,7 @@ public class Sapphire implements ModInitializer {
 		LOGGER.info("You can write literally anything in these");
 
 		SapphireBlocks.registerBlocks();
+		SapphireScreenHandlers.registerScreenHandlers();
 		SapphireBlockEntities.registerBlockEntities();
 		SapphireItems.registerItems();
 	}
