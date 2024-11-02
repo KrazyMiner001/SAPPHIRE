@@ -1,6 +1,8 @@
 package tech.krazyminer001.sapphire.screen.hallheroultcontroller;
 
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.render.GameRenderer;
@@ -10,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 import static tech.krazyminer001.sapphire.util.Utility.of;
 
+@Environment(EnvType.CLIENT)
 public class HallHeroultControllerScreen extends HandledScreen<HallHeroultControllerScreenHandler> {
     private static final Identifier TEXTURE = of("textures/gui/container/hall_heroult_controller.png");
 
