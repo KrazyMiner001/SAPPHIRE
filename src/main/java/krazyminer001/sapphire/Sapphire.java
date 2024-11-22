@@ -1,5 +1,6 @@
 package krazyminer001.sapphire;
 
+import krazyminer001.sapphire.blocks.SapphireBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +21,7 @@ public class Sapphire implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		SapphireBlocks.init();
 	}
 }
