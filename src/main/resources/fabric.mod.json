@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "sapphire",
+	"version": "${version}",
+	"name": "Sapphire",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sapphire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"krazyminer001.sapphire.Sapphire"
+		],
+		"client": [
+			"krazyminer001.sapphire.SapphireClient"
+		],
+		"fabric-datagen": [
+			"krazyminer001.sapphire.SapphireDataGenerator"
+		]
+	},
+	"mixins": [
+		"sapphire.mixins.json",
+		{
+			"config": "sapphire.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
