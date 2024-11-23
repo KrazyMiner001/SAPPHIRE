@@ -1,10 +1,12 @@
 package krazyminer001.sapphire.blocks.hallheroult;
 
 import krazyminer001.sapphire.blocks.SapphireBlocks;
+import krazyminer001.sapphire.blocks.SapphireHatchFlags;
 import krazyminer001.sapphire.blocks.SimpleMembers;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
+import tech.krazyminer001.aquamarine.multiblocks.HatchFlags;
 import tech.krazyminer001.aquamarine.multiblocks.MultiblockBlockEntity;
 import tech.krazyminer001.aquamarine.multiblocks.ShapeTemplate;
 import tech.krazyminer001.aquamarine.multiblocks.inventory.MultiblockInventory;
@@ -34,20 +36,29 @@ public class HallHeroultControllerMultiblockEntity extends MultiblockBlockEntity
 
     static {
         ShapeTemplate.Builder builder = new ShapeTemplate.Builder();
-        for (int x = -3; x <= 3; x++) {
-            for (int z = 0; z < 7; z++) {
-                builder.add(new BlockPos(x, 0, z), SimpleMembers.STEEL_CASING);
-            }
-        }
+        //Layer 1
         for (int x = -3; x <= 3; x++) {
             for (int z = 0; z < 7; z++) {
                 if (x == -3 || x == 3 || z == 0 || z == 6) {
-                    builder.add(new BlockPos(x, 1, z), SimpleMembers.STEEL_CASING);
+                    builder.add(new BlockPos(x, 0, z), SimpleMembers.STEEL_CASING, SapphireHatchFlags.FLUID_AND_ITEMS);
+                } else {
+                    builder.add(new BlockPos(x, 0, z), SimpleMembers.STEEL_CASING);
+                }
+            }
+        }
+
+        //Layer 2
+        for (int x = -3; x <= 3; x++) {
+            for (int z = 0; z < 7; z++) {
+                if (x == -3 || x == 3 || z == 0 || z == 6) {
+                    builder.add(new BlockPos(x, 1, z), SimpleMembers.STEEL_CASING, SapphireHatchFlags.FLUID_AND_ITEMS);
                 } else {
                     builder.add(new BlockPos(x, 1, z), SimpleMembers.TERRACOTTA);
                 }
             }
         }
+
+        //Layer 3
         for (int x = -3; x <= 3; x++) {
             for (int z = 0; z < 7; z++) {
                 if (x == -3 || x == 3 || z == 0 || z == 6) {
@@ -59,6 +70,8 @@ public class HallHeroultControllerMultiblockEntity extends MultiblockBlockEntity
                 }
             }
         }
+
+        //Layer 4
         for (int x = -3; x <= 3; x++) {
             for (int z = 0; z < 7; z++) {
                 if (x == -3 || x == 3 || z == 0 || z == 6) {
@@ -70,6 +83,8 @@ public class HallHeroultControllerMultiblockEntity extends MultiblockBlockEntity
                 }
             }
         }
+
+        //Layer 5
         for (int x = -3; x <= 3; x++) {
             for (int z = 0; z < 7; z++) {
                 if (x == -3 || x == 3 || z == 0 || z == 6) {
@@ -81,6 +96,8 @@ public class HallHeroultControllerMultiblockEntity extends MultiblockBlockEntity
                 }
             }
         }
+
+        //Layer 6
         for (int x = -3; x <= 3; x++) {
             for (int z = 0; z < 7; z++) {
                 if (x == -3 || x == 3 || z == 0 || z == 6) {
@@ -92,6 +109,8 @@ public class HallHeroultControllerMultiblockEntity extends MultiblockBlockEntity
                 }
             }
         }
+
+        //Layer 7
         for (int x = -3; x <= 3; x++) {
             for (int z = 0; z < 7; z++) {
                 if (x == -3 || x == 3 || z == 0 || z == 6) {
@@ -111,12 +130,15 @@ public class HallHeroultControllerMultiblockEntity extends MultiblockBlockEntity
                 .add(new BlockPos(1, 6, 2), SimpleMembers.COKE)
                 .add(new BlockPos(1, 6, 3), SimpleMembers.STEEL_CASING)
                 .add(new BlockPos(1, 6, 4), SimpleMembers.COKE);
+
+        //Layer 8
         builder
                 .add(new BlockPos(-1,  7, 3), SimpleMembers.STEEL_CASING)
                 .add(new BlockPos(0,  7, 2), SimpleMembers.STEEL_CASING)
                 .add(new BlockPos(0,  7, 3), SimpleMembers.STEEL_CASING)
                 .add(new BlockPos(0,  7, 4), SimpleMembers.STEEL_CASING)
                 .add(new BlockPos(1,  7, 3), SimpleMembers.STEEL_CASING)
+                //Layer 9
                 .add(new BlockPos(0,  8, 3), SimpleMembers.STEEL_CASING);
         shapeTemplate = builder.build();
     }
